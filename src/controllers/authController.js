@@ -39,7 +39,7 @@ const signUp = async (req, res) => {
         );
 
         // using email for auth
-        const verificationLink = `http://localhost:5000/api/verify-email/${verificationToken}`;
+        const verificationLink = `https://e-commerce-rest-api-1-rqrw.onrender.com/api/verify-email/${verificationToken}`;
 ;
         // smtp syntax
         const mailOptions = {
