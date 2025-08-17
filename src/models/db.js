@@ -2,7 +2,7 @@ const { Pool } = require('pg');
 require('dotenv').config({ path: require('find-config')('.env') });
 
 const pool = new Pool({
-    connectionString: process.env.DATABASE_URL, // Your full Aiven service URL
+    connectionString: process.env.DATABASE_URL.replace('?sslmode=require', ''), // Your full Aiven service URL
     ssl: {
         rejectUnauthorized: false, // Needed for Aiven SSL
     },
