@@ -2,14 +2,9 @@ const { Pool } = require('pg');
 require('dotenv').config({ path: require('find-config')('.env') });
 
 const pool = new Pool({
-    host: process.env.DATABASE_URL,
-    port: 16246, // PostgreSQL default port
-    user: process.env.DATABASE_USER, // Your PostgreSQL username
-    password: process.env.DATABASE_PASSWORD, // Your PostgreSQL password
-    database: process.env.DATABASE_NAME, // Your database name
-    port: process.env.DATABASE_PORT,
+    connectionString: process.env.DATABASE_URL, // Your full Aiven service URL
     ssl: {
-        rejectUnauthorized: false, // For AWS RDS SSL certificates
+        rejectUnauthorized: false, // Needed for Aiven SSL
     },
 });
 
