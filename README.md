@@ -1,6 +1,6 @@
 # E-Commerce API
 
-A RESTful e-commerce API built with Node.js, Express.js, and PostgreSQL, hosted on AWS (database) and Render (API server). This API is designed for a small e-commerce project focusing on Dell and Lenovo laptop products. It is open-source to provide free access to product data and authentication features.
+A RESTful e-commerce API built with Node.js, Express.js, and PostgreSQL, hosted on Aiven (database) and Render (API server). This API is designed for a small e-commerce project focusing on Dell and Lenovo laptop products. It is open-source to provide free access to product data and authentication features.
 
 ## Table of Contents
 - [Features](#features)
@@ -32,7 +32,7 @@ A RESTful e-commerce API built with Node.js, Express.js, and PostgreSQL, hosted 
 ### Prerequisites
 - Node.js v16+
 - PostgreSQL
-- AWS account (for database hosting)
+- Aiven account (for database hosting)
 - Render account (for API deployment)
 
 ### 1. Clone Repository
@@ -60,7 +60,6 @@ SMTP_PASS=your_email_password
 
 ### 4. Database Setup
 - Run migrations using your preferred ORM (e.g., Sequelize)
-- Ensure AWS RDS instance is configured with proper security groups
 
 ### 5. Start Server
 ```bash
@@ -144,4 +143,4 @@ MIT License. See `LICENSE` for details.
 For questions or issues, contact `sikhumbuzobembe184@email.com` or open a GitHub issue.
 
 ## API URL
-You can access the API here: `(https://e-commerce-rest-api-1-rqrw.onrender.com)`
+You can access the API here: `(https://e-commerce-rest-api-r8fx.onrender.com)`
